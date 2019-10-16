@@ -6,17 +6,13 @@
 Welcome to EFITools's documentation!
 ====================================
 
-Contents:
-
 .. toctree::
+   :caption: Table of Contents
+   :titlesonly:
    :maxdepth: 2
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. include:: about.rst
+.. include:: requirements.rst
+.. include:: installation.rst
+.. include:: usage.rst
 
