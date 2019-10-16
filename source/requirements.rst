@@ -1,9 +1,21 @@
 Requirements
 ============
 
-* Perl
+===========================
+Minimal System Requirements
+===========================
 
-* Perl Modules
+* Linux System.  Testing on Redhat/CentOS 6/7
+* 2 Cores - update
+* 8GB of RAM - update
+* 100GB of hard drive space - update
+
+============
+Applications
+============
+* Perl (https://www.perl.org/)
+
+* Perl Modules (https://www.cpan.org/)
 
    - DBI 1.609
    - DBD::mysql 4.013
@@ -29,7 +41,37 @@ Requirements
    - Scalar::Util 1.45
    - Array::Utils 0.5
 
-* R
+* R (https://www.r-project.org/)
 
-* BLAST 2.2.26 
+* R Packages 
 
+   - rhdf5 (https://bioconductor.org/packages/release/bioc/html/rhdf5.html)
+   - Hmisc (https://cran.r-project.org/web/packages/Hmisc/index.html)
+
+* HDF5 (https://www.hdfgroup.org/solutions/hdf5/)
+
+* BLAST 2.2.26 (https://blast.ncbi.nlm.nih.gov/Blast.cgi) - Note: This does not support BLAST+
+
+* CD-HIT (http://weizhongli-lab.org/cd-hit/)
+
+* SQL Database.  Currently supports the following
+
+   - SQLite (https://www.sqlite.org/)
+   - MySQL (https://www.mysql.com/)
+   - MariaDB (https://mariadb.com/)
+
+=================
+Genomic Databases
+=================
+
+* InterPro (https://www.ebi.ac.uk/interpro/)
+* Uniprot (https://www.uniprot.org/)
+
+============
+HPC Clusters
+============
+
+* A Job Scheduler.  Currently supports the following
+
+   - SLURM (https://slurm.schedmd.com/slurm.html)
+   - PBS Torque (https://www.adaptivecomputing.com/products/torque/)

@@ -5,6 +5,8 @@
 
 Welcome to EFITools's documentation!
 ====================================
+* https://efi.igb.illinois.edu
+* https://github.com/EnzymeFunctionInitiative/
 
 .. toctree::
    :caption: Table of Contents
