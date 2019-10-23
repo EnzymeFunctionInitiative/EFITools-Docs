@@ -4,8 +4,12 @@
 
 ## Compiling
 * Install Sphinx
-```pip install sphinx```
+```
+pip install sphinx
+```
 * To compile html files
-```make html```
+```
+make html
+```
 * The html files will be located in a the build/html folder
 
