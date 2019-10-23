@@ -3,7 +3,9 @@
 * Uses sphinx documentation system, http://www.sphinx-doc.org
 
 ## Compiling
-* To compile run
+* Install Sphinx
+```pip install sphinx```
+* To compile html files
 ```make html```
-
+* The html files will be located in a the build/html folder
 
