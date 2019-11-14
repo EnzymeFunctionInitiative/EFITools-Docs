@@ -15,6 +15,14 @@ Welcome to EFITools's documentation!
 
 .. include:: about.rst
 .. include:: requirements.rst
-.. include:: installation.rst
-.. include:: usage.rst
+
+Installation
+============
+.. include:: download.rst
+.. include:: config.rst
+
+.. include:: build_database.rst
+.. include:: est.rst
+.. include:: gnt.rst
+.. include:: cgfp.rst
 

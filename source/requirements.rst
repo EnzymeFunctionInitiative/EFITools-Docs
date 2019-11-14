@@ -23,7 +23,6 @@ Applications
    - Capture::Tiny 0.42
    - Exporter 5.68
    - Log::Message::Simple 0.10
-   - Test::More 1.302037
    - Getopt::Long 2.48
    - List::Util 1.45
    - List::MoreUtils 0.428
@@ -33,15 +32,16 @@ Applications
    - XML::Parser 2.36
    - XML::LibXML::Reader 2.0129
    - Data::Dumper 2.160
-   - Statistics::R	0.34
    - File::Slurp 9999.19
    - JSON 2.15
    - Time::HiRes 1.9742
    - Storable 2.56
    - Scalar::Util 1.45
    - Array::Utils 0.5
+   - Config::IniFiles 3.000002
+   - GD::Graph::boxplot 1.00
 
-* R (https://www.r-project.org/)
+* R 3.3.0 or greater (https://www.r-project.org/)
 
 * R Packages 
 
@@ -54,11 +54,15 @@ Applications
 
 * CD-HIT (http://weizhongli-lab.org/cd-hit/)
 
+* GNU Coreutils 8.28 or greater (https://www.gnu.org/software/coreutils/)
+
 * SQL Database.  Currently supports the following
 
    - SQLite (https://www.sqlite.org/)
    - MySQL (https://www.mysql.com/)
    - MariaDB (https://mariadb.com/)
+
+* Libxml2 (http://www.xmlsoft.org/)
 
 =================
 Genomic Databases
