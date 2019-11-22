@@ -34,12 +34,12 @@ Applications
    - Data::Dumper 2.160
    - File::Slurp 9999.19
    - JSON 2.15
-   - Time::HiRes 1.9742
    - Storable 2.56
    - Scalar::Util 1.45
    - Array::Utils 0.5
    - Config::IniFiles 3.000002
    - GD::Graph::boxplot 1.00
+   - Statistics::Descriptive 3.0702
 
 * R 3.3.0 or greater (https://www.r-project.org/)
 
@@ -79,3 +79,5 @@ HPC Clusters
 
    - SLURM (https://slurm.schedmd.com/slurm.html)
    - PBS Torque (https://www.adaptivecomputing.com/products/torque/)
+   - PBS Pro (https://www.pbspro.org/)
+

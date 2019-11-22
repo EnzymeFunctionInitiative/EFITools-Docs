@@ -23,6 +23,6 @@ Installation
 
 .. include:: build_database.rst
 .. include:: est.rst
-.. include:: gnt.rst
+.. include:: gnn.rst
 .. include:: cgfp.rst
-
+.. include:: appendix.rst

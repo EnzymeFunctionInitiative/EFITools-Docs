@@ -10,42 +10,53 @@ Config File
 
 * Edit conf/efi.config to support your environment
 
-* For MySQL Setup edit the database section.
+* For MySQL/MariaDB Setup edit the database section.
 
 .. code-block:: bash
 
    [database]
+   dbi=mysql
    user=<MYSQLUSER>
    password=<MYSQLPASSWORD>
    host=<MYSQLHOST>
    port=3306
-   ip_range=<IPRANGE>
 
 * For SQLite
+  
+.. code-block:: bash
 
+   [database]
+   dbi=sqlite3
+   name=<PATH TO SQLITE DATABASE>
+
+ 
 * For HPC Cluster, specify the job scheduler and queue/paritition to use.
 
 .. code-block:: bash
 
    [cluster]
-   scheduler=<PBS/SLURM>
+   scheduler=<slurm/torque/pbspro>
    queue=<QUEUE>
+   mem_queue=<LARGE MEMORY QUEUE>
+   np=<NUMBER OF PROCESSORS>
+   scratch_dir=<LOCAL NODE SCRATCH DIRECTORY>
 
+===========
+Environment
+===========
+
+In order to run the EFITool commands, the environment for it needs to be setup so the bin folder is in your PATH,  
 * Copy environment.sh.example file to environment.sh
 
 .. code-block:: bash
 
    cp environment.sh.example environment.sh
 
-* Edit environemt.sh to support your environement
+* Edit environmemt.sh to have the PATH variable point to the bin folder and add any other PATHS, LD_LIRRARY_PATHS, modules that are needed.
 
 .. code-block:: bash
 
-   export EFI_CONFIG
-   export EFI_PASS
-   export EFI_EST
-   export EFI_QUEUE
-   export EFI_NP
-   export EFI_MEMQUEUE
-
+   #!/bin/bash
+   export PATH=/usr/local/EFITools/bin:$PATH
+   export PATH=/usr/local/EFITools/sbin/db_tools:$PATH
 
