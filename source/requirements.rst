@@ -15,6 +15,9 @@ The amount of CPU cores and RAM required is greatly dependent on the types of in
 ============
 Applications
 ============
+
+Versions more recent than the versions specified below are acceptable.
+
 * Perl (https://www.perl.org/)
 
 * Perl Modules (https://www.cpan.org/)
@@ -51,9 +54,17 @@ Applications
 
 * HDF5 (https://www.hdfgroup.org/solutions/hdf5/) **
 
-* BLAST 2.2.26 (https://blast.ncbi.nlm.nih.gov/Blast.cgi) - Note: This does not support BLAST+
+* BLAST 2.2.26 (https://blast.ncbi.nlm.nih.gov/Blast.cgi) - Note: This is the legacy BLAST, and requires this specific version; not NCBI-BLAST+
+
+* NCBI-BLAST+ 2.2.28 (for EFI-CGFP)
 
 * CD-HIT (http://weizhongli-lab.org/cd-hit/)
+
+* USEARCH v6.0.307 (http://www.drive5.com/usearch/)
+
+* MUSCLE v3.8.31 (http://www.drive5.com/muscle/)
+
+* DIAMOND 0.9 (https://github.com/bbuchfink/diamond)
 
 * GNU Coreutils 8.28 or greater (https://www.gnu.org/software/coreutils/)
 
