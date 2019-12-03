@@ -15,11 +15,105 @@ First you need to setup the environment for the EFITools to run.  You need to so
 
    source /usr/local/EFITools/environment.sh
 
+There are several sections in the efi.conf file that are relevant to CGFP:
+
+.. code-block:: bash
+
+    [cgfp]
+    type=diamond
+    shortbred_repo=sbin/efi_cgfp/shortbred_20180817 ; ShortBRED from Huttenhower, local to EFITools
+
+    [cgfp.database]
+    hmp=path_to_HMP_database
+
+    [environment.cgfp]
+    module load Python/2
+    module load Biopython
+    module load USEARCH/9
+    module load MUSCLE/3
+    module load BLAST+
+    module load CD-HIT
+    module load DIAMOND
+
+The ``type`` parameter specifies whether to use DIAMOND for the sequence space search or BLAST. DIAMOND is much more efficient than BLAST so use of DIAMOND is encouraged.
+
+``shortbred_repo`` is the path to the repository that contains the ShortBRED code (currently available at https://bitbucket.org/biobakery/shortbred/wiki/Home).  As of release 2, the EFITools include a version of ShortBRED from 2018-08-17 (the ``diamond`` branch https://bitbucket.org/biobakery/shortbred/src/diamond/). This version is accessed with the default path ``sbin/efi_cgfp/shortbred_20180817`` in the ``efi.conf.example`` file.  This particular version of ShortBRED includes customizations developed by the EFI team for computing both mean and median quantifications.
+
+The ``hmp`` parameter is the path to a file that contains information describing a metagenome dataset.  
+
 ====
 CGFP
 ====
 
 .. code-block:: bash
 
-   bigscape_job.pl
+   efi.pl cgfp-identify --ssn-in <PATH_TO_SSN> --ssn-out-name <OUTPUT_SSN_FILE_NAME>
+
+.. csv-table::
+
+    "``--ssn-in``", "path to input SSN file (relative or absolute)"
+    "``--ssn-out-name``", "what to name the output xgmml file (not a path)"
+    "``--min-seq-len``", "minimum sequence length to use (to exclude fragments from UniRef90 SSNs)"
+    "``--max-seq-len``", "maximim sequence length to use (to exclude sequences from UniRef90 SSNs)"
+    "``--search-type``", "type of search to use (diamond or blast)"
+    "``--cdhit-sid``", "Sequence identity to use for CD-HIT clustering proteins into families for consensus sequence determination; defaults to ShortBRED's default value"
+    "``--cons-thresh``", "Consensus threshold for assigning AA's in the family alignments to the consensus sequences; defaults to ShortBRED's default value"
+    "``--ref-db``", "Which type of reference database to use (uniprot = full UniProt, uniref50 = UniRef50, uniref90 = UniRef90); default uniprot"
+
+.. code-block:: bash
+
+    efi.pl cgfp-quantify --ssn-in <PATH_TO_IDENTIFY_SSN> --ssn-out-name <OUTPUT_SSN_FILE_NAME> --quantify-dir <QUANTIFY_DIR_NAME> --metagenome-db <METAGENOME_NAME> --metagenome-ids <METAGENOME_IDS>
+
+.. code-block:: bash
+    
+    "``--ssn-in``", "path to input SSN file (relative or absolute)"
+    "``--ssn-out-name``", "what to name the output xgmml file (not a path)"
+    "``--quantify-dir``", "name of the directory to put quantify results in (sub dir of the job output dir)"
+    "``--metagenome-db``", "name of the metagenome database to use (available in the [cgfp.database] section of the efi.conf file)"
+    "``--metagenome-ids``", "comma-separated list of metagenome IDs to use from the database; this can be the string @all to use all metagenomes in the dataset"
+    "``--cdhit-out-name``", "what to name the output cdhit mapping table file (not a path)"
+    "``--min-seq-len``", "minimum sequence length to use (to exclude fragments from UniRef90 SSNs)"
+    "``--max-seq-len``", "maximim sequence length to use (to exclude sequences from UniRef90 SSNs)"
+    "``--search-type``", "type of search to use (diamond or blast)"
+    "``--cdhit-sid``", "Sequence identity to use for CD-HIT clustering proteins into families for consensus sequence determination; defaults to ShortBRED's default value"
+    "``--cons-thresh``", "Consensus threshold for assigning AA's in the family alignments to the consensus sequences; defaults to ShortBRED's default value"
+    "``--ref-db``", "Which type of reference database to use (uniprot = full UniProt, uniref50 = UniRef50, uniref90 = UniRef90); default uniprot"
+
+========
+ADVANCED
+========
+
+-------------------
+Metagenome Datasets
+-------------------
+
+*This section is for reference only, for administrators of a web site.*
+
+The database is a file ending in ``.db`` (hereafter known as ``MG.db``) that contains tabular information describing the available metagenomes, with one line per metagenome.  The format of the line is the following tab-separated values: ``metagenome ID``, ``bodysite or primary metadata``, ``gender or secondary metadata``, ``relative path to nucleotide FASTA file``.
+
+Each dataset must have an ``AvgGenomeSize.txt`` file containing a tab separated table of metagenome ID and average
+genome size.  If no file is present then proper normalization of results will not occur.
+
+--------------------------
+Data for the web interface
+--------------------------
+
+
+Other files that should be present include the following: ``MG.db.description`` that contains a description
+of the dataset; ``MG.db.metadata`` that contains information regarding the body sites (see below)
+
+The ``MG.db.metadata`` must contain information regarding the metadata in the ``MG.db`` file (each parameter
+is tab-separated):
+
+.. code-block:: bash
+    DB_NAME <name>
+    VERSION 2
+    CATEGORIES      <primary metadata>,<secondary metadata>
+    #category color order
+    Primary 1; Secondary 1  #9a7d0a 1,1
+    Primary 3; Secondary 2  #196f3d 3,2
+    Primary 5; Secondary 3  #21618c 5,3
+    Primary 2; Secondary 4  #f1c40f 2,4
+    Primary 4; Secondary 5  #27ae60 4,5
+    Primary 6; Secondary 6  #3498db 6,6
 
