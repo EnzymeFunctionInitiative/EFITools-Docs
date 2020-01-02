@@ -2,6 +2,11 @@ Enzyme Similarity Tool (EST)
 ============================
 The main program is **efi.pl**.  This has all the parameters and settings to run EST jobs.
 
+===========
+Sample Data
+===========
+Sample Data is located in the **sample_data** folder.  These can be used to test out the program
+
 =================
 Setup Environment
 =================
@@ -58,6 +63,12 @@ This allows exploration of local sequence-function space for the query sequence.
    "``--uniref-version``", "Uses the UniRef50 or UniRef90 cluster ID sequences instead of the full family"
    "``--exclude-fragments``","exclude sequences that are defined as fragments by UniProt"
 
+To test you can run
+
+.. code-block:: bash
+
+   efi.pl blast --sequence-file <INSTALL LOCATION>/sample_data/sequence.txt
+
 ========
 Families
 ========
@@ -77,6 +88,12 @@ Defined protein families are used to generate the SSN. allows exploration of seq
    "``--uniref-version``", "Uses the UniRef50 or UniRef90 cluster ID sequences instead of the full family"
    "``--domain``", "use the sequence domain specified by the family(s)"
    "``--exclude-fragments``", "exclude sequences that are defined as fragments by UniProt"
+
+To test you can run
+
+.. code-block:: bash
+
+   efi.pl family --pfam PF05677
 
 =====
 FASTA
@@ -98,6 +115,12 @@ A SSN is generated from a set of defined sequences. allows generation of a SSN f
    "``--uniref-version``", "Uses the UniRef50 or UniRef90 cluster ID sequences instead of the full family"
    "``--exclude-fragments``", "exclude sequences that are defined as fragments by UniProt"
 
+To test you can run
+
+.. code-block:: bash
+
+   efi.pl fasta --fasta-file <INSTALL LOCATION>/sample_data/test.fasta
+
 =============
 Accession IDs
 =============
@@ -117,32 +140,12 @@ The SSN is generated after fetching the information from the corresponding datab
    "``--uniref-version``", "Uses the UniRef50 or UniRef90 cluster ID sequences instead of the full family"
    "``--exclude-fragments``", "exclude sequences that are defined as fragments by UniProt"
 
- 
-==========
-Color SSNs
-==========
-
-Utility for the identification and coloring of independent clusters within a SSN. Independent clusters in the uploaded SSN are identified, numbered and colored. Summary tables, sets of IDs and sequences per clusters are provided. A Cytoscape-edited SNN can serve as input for this utility. 
+To test you can run
 
 .. code-block:: bash
 
-   efi.pl color
-
-.. csv-table::
-
-   "``--ssn-in``", "path to uncolored SSN"
-   "``--ssn-out``", "path to output SSN, colored and numbered"
-   "``--map-file-name``","path to output file mapping UniProt IDs to clusters"
-   "``--domain-map-file-name``", "path to output file mapping UniProt IDs to clusters, with domain info; only valid when the input SSN contains domain-length sequences"
-   "``--stats``", "path to statistics file containing various node counts"
-   "``--cluster-size``", "path to file that lists cluster sizes"
-   "``--sp-clusters-desc``", "path to file that lists Swiss-Prot IDs and the corresponding cluster number"
-   "``--sp-singletons-desc``", "path to file that lists Swiss-Prot IDs in singletons"
-
-
-
-
-
+   efi.pl accession --accession-file <INSTALL LOCATION>/sample_data/uniprot_ids.txt
+ 
 ================
 SSN Finalization
 ================

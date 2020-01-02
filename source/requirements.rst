@@ -41,14 +41,11 @@ Applications
    - GD::Graph::boxplot 1.00
    - Statistics::Descriptive 3.0702
 
-* R 3.3.0 or greater (https://www.r-project.org/)
+* R 3.3.0 or greater (https://www.r-project.org/) with PNG support
 
 * R Packages 
 
-   - rhdf5 (https://bioconductor.org/packages/release/bioc/html/rhdf5.html)
    - Hmisc (https://cran.r-project.org/web/packages/Hmisc/index.html)
-
-* HDF5 (https://www.hdfgroup.org/solutions/hdf5/)
 
 * BLAST 2.2.26 (https://blast.ncbi.nlm.nih.gov/Blast.cgi) - Note: This does not support BLAST+
 
@@ -63,6 +60,8 @@ Applications
    - MariaDB (https://mariadb.com/)
 
 * Libxml2 (http://www.xmlsoft.org/)
+
+* LibGD (http://libgd.github.io/)
 
 =================
 Genomic Databases
