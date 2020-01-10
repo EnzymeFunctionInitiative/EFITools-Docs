@@ -49,20 +49,17 @@ Versions more recent than the versions specified below are acceptable.
 
 * R Packages 
 
-<<<<<<< HEAD
    - Hmisc (https://cran.r-project.org/web/packages/Hmisc/index.html)
 
 * BLAST 2.2.26 (https://blast.ncbi.nlm.nih.gov/Blast.cgi) - Note: This does not support BLAST+
-=======
    - rhdf5 (https://bioconductor.org/packages/release/bioc/html/rhdf5.html) **
    - Hmisc (https://cran.r-project.org/web/packages/Hmisc/index.html) **
 
-* HDF5 (https://www.hdfgroup.org/solutions/hdf5/) **
+* HDF5 (https://www.hdfgroup.org/solutions/hdf5/)
 
 * BLAST 2.2.26 (https://blast.ncbi.nlm.nih.gov/Blast.cgi) - Note: This is the legacy BLAST, and requires this specific version; not NCBI-BLAST+
 
 * NCBI-BLAST+ 2.2.28 (for EFI-CGFP)
->>>>>>> ac1f6ded57dc083b9a0bffc30c75ca29b2f70662
 
 * CD-HIT (http://weizhongli-lab.org/cd-hit/)
 
@@ -82,12 +79,10 @@ Versions more recent than the versions specified below are acceptable.
 
 * Libxml2 (http://www.xmlsoft.org/)
 
-<<<<<<< HEAD
 * LibGD (http://libgd.github.io/)
-=======
+
 HDF5 is only required if using HDF5-based graphing code (as of release 2, this is disabled by
 default).
->>>>>>> ac1f6ded57dc083b9a0bffc30c75ca29b2f70662
 
 =================
 Genomic Databases

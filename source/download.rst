@@ -52,6 +52,7 @@ You can see if R has PNG support by running capabilities()
    tar -xf blast-2.2.26-x64-linux.tar.gz
 
 * Set CPAN module install location
+
 .. code-block:: bash
 
    o conf mbuildpl_arg "--install_base <PERL PREFIX>"

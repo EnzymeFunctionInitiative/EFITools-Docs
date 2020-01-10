@@ -16,9 +16,9 @@ First you need to setup the environment for the EFITools to run.  You need to so
 
    source /usr/local/EFITools/environment.sh
 
-======================
+=======================
 Global/Advanced Options
-======================
+=======================
 
 * Global Options
 
@@ -71,17 +71,12 @@ This allows exploration of local sequence-function space for the query sequence.
    "``--uniref-version``", "Uses the UniRef50 or UniRef90 cluster ID sequences instead of the full family"
    "``--exclude-fragments``","exclude sequences that are defined as fragments by UniProt"
 
-<<<<<<< HEAD
 To test you can run
 
 .. code-block:: bash
 
    efi.pl blast --sequence-file <INSTALL LOCATION>/sample_data/sequence.txt
 
-========
-=======
---------
->>>>>>> ac1f6ded57dc083b9a0bffc30c75ca29b2f70662
 Families
 --------
 
@@ -101,17 +96,12 @@ Defined protein families are used to generate the SSN. allows exploration of seq
    "``--domain``", "use the sequence domain specified by the family(s)"
    "``--exclude-fragments``", "exclude sequences that are defined as fragments by UniProt"
 
-<<<<<<< HEAD
 To test you can run
 
 .. code-block:: bash
 
    efi.pl family --pfam PF05677
 
-=====
-=======
------
->>>>>>> ac1f6ded57dc083b9a0bffc30c75ca29b2f70662
 FASTA
 -----
 
@@ -131,17 +121,12 @@ A SSN is generated from a set of defined sequences. allows generation of a SSN f
    "``--uniref-version``", "Uses the UniRef50 or UniRef90 cluster ID sequences instead of the full family"
    "``--exclude-fragments``", "exclude sequences that are defined as fragments by UniProt"
 
-<<<<<<< HEAD
 To test you can run
 
 .. code-block:: bash
 
    efi.pl fasta --fasta-file <INSTALL LOCATION>/sample_data/test.fasta
 
-=============
-=======
--------------
->>>>>>> ac1f6ded57dc083b9a0bffc30c75ca29b2f70662
 Accession IDs
 -------------
 
@@ -160,14 +145,11 @@ The SSN is generated after fetching the information from the corresponding datab
    "``--uniref-version``", "Uses the UniRef50 or UniRef90 cluster ID sequences instead of the full family"
    "``--exclude-fragments``", "exclude sequences that are defined as fragments by UniProt"
 
-<<<<<<< HEAD
 To test you can run
 
 .. code-block:: bash
 
    efi.pl accession --accession-file <INSTALL LOCATION>/sample_data/uniprot_ids.txt
- 
-=======
  
 ----------
 Color SSNs
@@ -190,7 +172,6 @@ Utility for the identification and coloring of independent clusters within a SSN
    "``--sp-clusters-desc``", "path to file that lists Swiss-Prot IDs and the corresponding cluster number"
    "``--sp-singletons-desc``", "path to file that lists Swiss-Prot IDs in singletons"
 
->>>>>>> ac1f6ded57dc083b9a0bffc30c75ca29b2f70662
 ================
 SSN Finalization
 ================
