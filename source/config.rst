@@ -30,7 +30,7 @@ Config File
    name=<PATH TO SQLITE DATABASE>
 
  
-* For HPC Cluster, specify the job scheduler and queue/paritition to use.
+* For HPC Cluster, specify the job scheduler and queue/partition to use.
 
 .. code-block:: bash
 
@@ -38,8 +38,12 @@ Config File
    scheduler=<slurm/torque/pbspro>
    queue=<QUEUE>
    mem_queue=<LARGE MEMORY QUEUE>
+   max_queue_ram=<MAXIMUM RAM RESERVATION SUPPORTED FOR STANDARD NODE>
+   max_mem_queue_ram=<MAXIMUM RAM RESERVATION SUPPORTED FOR LARGE MEMORY NODE>
    np=<NUMBER OF PROCESSORS>
    scratch_dir=<LOCAL NODE SCRATCH DIRECTORY>
+
+The ``max_queue_ram`` and ``max_mem_queue_ram`` paramters are used to dynamically determine which node to assign particular jobs to.
 
 ===========
 Environment

@@ -6,13 +6,18 @@ Minimal System Requirements
 ===========================
 
 * Linux System.  Testing on Redhat/CentOS 6/7
-* 2 Cores - update
-* 8GB of RAM - update
-* 100GB of hard drive space - update
+* 8 Cores, minimum
+* 32 GB of RAM, minimum
+* 1 TB of hard drive space
+
+The amount of CPU cores and RAM required is greatly dependent on the types of inputs provided. For small families and numbers of sequences, low system specs will work just fine.  For large families, much more RAM can be required.
 
 ============
 Applications
 ============
+
+Versions more recent than the versions specified below are acceptable.
+
 * Perl (https://www.perl.org/)
 
 * Perl Modules (https://www.cpan.org/)
@@ -39,17 +44,33 @@ Applications
    - Array::Utils 0.5
    - Config::IniFiles 3.000002
    - GD::Graph::boxplot 1.00
-   - Statistics::Descriptive 3.0702
 
 * R 3.3.0 or greater (https://www.r-project.org/) with PNG support
 
 * R Packages 
 
+<<<<<<< HEAD
    - Hmisc (https://cran.r-project.org/web/packages/Hmisc/index.html)
 
 * BLAST 2.2.26 (https://blast.ncbi.nlm.nih.gov/Blast.cgi) - Note: This does not support BLAST+
+=======
+   - rhdf5 (https://bioconductor.org/packages/release/bioc/html/rhdf5.html) **
+   - Hmisc (https://cran.r-project.org/web/packages/Hmisc/index.html) **
+
+* HDF5 (https://www.hdfgroup.org/solutions/hdf5/) **
+
+* BLAST 2.2.26 (https://blast.ncbi.nlm.nih.gov/Blast.cgi) - Note: This is the legacy BLAST, and requires this specific version; not NCBI-BLAST+
+
+* NCBI-BLAST+ 2.2.28 (for EFI-CGFP)
+>>>>>>> ac1f6ded57dc083b9a0bffc30c75ca29b2f70662
 
 * CD-HIT (http://weizhongli-lab.org/cd-hit/)
+
+* USEARCH v6.0.307 (http://www.drive5.com/usearch/)
+
+* MUSCLE v3.8.31 (http://www.drive5.com/muscle/)
+
+* DIAMOND 0.9 (https://github.com/bbuchfink/diamond)
 
 * GNU Coreutils 8.28 or greater (https://www.gnu.org/software/coreutils/)
 
@@ -61,7 +82,12 @@ Applications
 
 * Libxml2 (http://www.xmlsoft.org/)
 
+<<<<<<< HEAD
 * LibGD (http://libgd.github.io/)
+=======
+HDF5 is only required if using HDF5-based graphing code (as of release 2, this is disabled by
+default).
+>>>>>>> ac1f6ded57dc083b9a0bffc30c75ca29b2f70662
 
 =================
 Genomic Databases
