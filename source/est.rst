@@ -22,8 +22,8 @@ Global/Advanced Options
    "``--job-id``", "the job number to assign to the job; this is the prefix to each file; if not specified no prefix will be assigned to the output files and job scripts (the file name will mirror that of the input file)."
    "``--job-dir``", "the directory to store all of the inputs/outputs to the job; it will contain scripts/ (the location for scripts submitted ot the cluster), log/ (the output from cluster jobs), and output/ (the directory where results will be stored)."
    "``--help``","if no valid job types are specified, this help is displayed; if a job type is provided, shows the specific options for the job type."
-   "``--memory``","specify an alternate memory environment, if the environment is present in the config file; documented in the config file example."
-   "``--walltime``","specify an alternate walltime environment, if the environment is present in the config file; documented in the config file example."
+   "``--memory``","specify an alternate memory profile, if the profile is present in the config file; documented in the config file example."
+   "``--walltime``","specify an alternate walltime profile, if the profile is present in the config file; documented in the config file example."
 
 * Advanced Options (only for administrators for testing purposes)
 
