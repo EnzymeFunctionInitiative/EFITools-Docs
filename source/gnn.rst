@@ -31,6 +31,12 @@ Generating Network
    "``--nb-size``", "neighborhood size, the number of neighbors to collect on either side; default 10"
    "``--cooc``", "minimal co-occurrence percentage lower limit; default 20"
 
+To test you can run
+
+.. code-block:: bash
+
+   efi.pl gnn --ssn-in <INSTALL LOCATION>/sample_data/ssn_uniprot_domain.xgmml
+
 ============================
 Genome Neighborhood Diagrams
 ============================
@@ -55,3 +61,11 @@ The EFI-GNT tools provide the capability to view diagrams of genome neighborhood
    "``--title``", "the job title to save in the output file; shows up in GND viewer"
    "``--job-type``","the string to put in for the job type (used by the web app)"
    "``--nb-size``","the neighborhood window on either side of the query sequences; default 10"
+
+To test you can run
+
+.. code-block:: bash
+
+   efi.pl gnd 
+
+

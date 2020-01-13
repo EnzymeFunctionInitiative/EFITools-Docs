@@ -106,6 +106,7 @@ The ``MG.db.metadata`` must contain information regarding the metadata in the ``
 is tab-separated):
 
 .. code-block:: bash
+
     DB_NAME <name>
     VERSION 2
     CATEGORIES      <primary metadata>,<secondary metadata>

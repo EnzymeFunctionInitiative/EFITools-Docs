@@ -45,14 +45,17 @@ Versions more recent than the versions specified below are acceptable.
    - Config::IniFiles 3.000002
    - GD::Graph::boxplot 1.00
 
-* R 3.3.0 or greater (https://www.r-project.org/)
+* R 3.3.0 or greater (https://www.r-project.org/) with PNG support
 
 * R Packages 
 
+   - Hmisc (https://cran.r-project.org/web/packages/Hmisc/index.html)
+
+* BLAST 2.2.26 (https://blast.ncbi.nlm.nih.gov/Blast.cgi) - Note: This does not support BLAST+
    - rhdf5 (https://bioconductor.org/packages/release/bioc/html/rhdf5.html) **
    - Hmisc (https://cran.r-project.org/web/packages/Hmisc/index.html) **
 
-* HDF5 (https://www.hdfgroup.org/solutions/hdf5/) **
+* HDF5 (https://www.hdfgroup.org/solutions/hdf5/)
 
 * BLAST 2.2.26 (https://blast.ncbi.nlm.nih.gov/Blast.cgi) - Note: This is the legacy BLAST, and requires this specific version; not NCBI-BLAST+
 
@@ -75,6 +78,8 @@ Versions more recent than the versions specified below are acceptable.
    - MariaDB (https://mariadb.com/)
 
 * Libxml2 (http://www.xmlsoft.org/)
+
+* LibGD (http://libgd.github.io/)
 
 HDF5 is only required if using HDF5-based graphing code (as of release 2, this is disabled by
 default).
