@@ -1,4 +1,8 @@
 language: python
+
+git:
+   submodules: true
+
 python:
    - 3.6
 
