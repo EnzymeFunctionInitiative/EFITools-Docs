@@ -7,7 +7,7 @@ python:
    - 3.6
 
 install:
-   - pip install Sphinx
+   - pip install Sphinx sphinx-rtd-theme
 
 script:
    - make html
