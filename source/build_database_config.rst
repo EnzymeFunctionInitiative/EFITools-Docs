@@ -8,8 +8,6 @@ Config File
 
    cp conf/build.conf.example conf/build.conf
 
-* Edit conf/build.conf to support your environment
-
 * For MySQL/MariaDB Setup edit the database section.
 
 .. code-block:: bash

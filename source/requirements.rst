@@ -49,9 +49,6 @@ Versions more recent than the versions specified below are acceptable.
 
 * R Packages 
 
-   - Hmisc (https://cran.r-project.org/web/packages/Hmisc/index.html)
-
-* BLAST 2.2.26 (https://blast.ncbi.nlm.nih.gov/Blast.cgi) - Note: This does not support BLAST+
    - rhdf5 (https://bioconductor.org/packages/release/bioc/html/rhdf5.html) **
    - Hmisc (https://cran.r-project.org/web/packages/Hmisc/index.html) **
 
