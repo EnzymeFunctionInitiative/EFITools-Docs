@@ -6,7 +6,7 @@ Config File
 
 .. code-block:: bash
 
-   cp conf/efi.config.example conf/efi.config
+   cp conf/efi.conf.example conf/efi.config
 
 * Edit conf/efi.config to support your environment
 

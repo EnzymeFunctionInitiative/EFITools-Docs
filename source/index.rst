@@ -22,6 +22,8 @@ Installation
 .. include:: config.rst
 
 .. include:: build_database.rst
+.. include:: build_database_config.rst
+.. include:: build_database_steps.rst
 .. include:: est.rst
 .. include:: color.rst
 .. include:: gnn.rst
