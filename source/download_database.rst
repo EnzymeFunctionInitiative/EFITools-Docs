@@ -4,17 +4,16 @@ Download Database
 
 * The databases are located at 
 
-.. code-block:: bash
-
-	https://efi.igb.illinois.edu/database/latest
+	`https://efi.igb.illinois.edu/databases/latest <https://efi.igb.illinois.edu/databases/latest>`_
 
 * Older versions can be found at 
 
-.. code-block:: bash
+	`https://efi.igb.illinois.edu/databases/ <https://efi.igb.illinois.edu/databases>`_
 
-        https://efi.igb.illinois.edu/database/
 
-* We provide the sqlite database, mysql import file, and the blast databases along with their md5 and sha256 checksums.
+* You need to download the blastdb and either the sqlite database or the mysql import file.  
+* The md5sum and sha256sums are also located in the folder
+
 * Using wget
 
 .. code-block:: bash
