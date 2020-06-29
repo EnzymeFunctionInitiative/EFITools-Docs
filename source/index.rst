@@ -20,7 +20,8 @@ Installation
 ============
 .. include:: download.rst
 .. include:: config.rst
-
+.. include:: database.rst
+.. include:: download_database.rst
 .. include:: build_database.rst
 .. include:: build_database_config.rst
 .. include:: build_database_steps.rst
