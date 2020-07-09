@@ -19,7 +19,7 @@ Download Database
 .. code-block:: bash
 
         wget https://efi.igb.illinois.edu/databases/20200423/blastdb_202004.tar.bz2
-	wget https://efi.igb.illinois.edu/databases/20200423/efi_202004.mysql.bz2
+	wget https://efi.igb.illinois.edu/databases/20200423/efi_202004.mysql.sql.bz2
 	wget https://efi.igb.illinois.edu/databases/20200423/efi_202004.sqlite.bz2
 
 * Using rsync
@@ -27,7 +27,7 @@ Download Database
 .. code-block:: bash
 
         rsync -av rsync://efi.igb.illinois.edu/databases/20200423/blastdb_202004.tar.bz2 .
-        rsync -av rsync://efi.igb.illinois.edu/databases/20200423/efi_202004.mysql.bz2 .
+        rsync -av rsync://efi.igb.illinois.edu/databases/20200423/efi_202004.mysql.sql.bz2 .
         rsync -av rsync://efi.igb.illinois.edu/databases/20200423/efi_202004.sqlite.bz2 .
 
 
