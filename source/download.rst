@@ -51,21 +51,10 @@ You can see if R has PNG support by running capabilities()
    wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/legacy.NOTSUPPORTED/2.2.26/blast-2.2.26-x64-linux.tar.gz
    tar -xf blast-2.2.26-x64-linux.tar.gz
 
-* Set CPAN module install location
+* Install Perl Modules.  This uses the cpanm to install the nessary perl modules.  You can specify a location to install all the modules.
 
 .. code-block:: bash
 
-   o conf mbuildpl_arg "--install_base <PERL PREFIX>"
-   o conf makepl_arg "PREFIX=<PERL PERFIX>"
-   o conf commit 
-
-* Install required CPAN modules
-
-.. code-block:: bash
-
-   PERL_MM_USE_DEFAULT=1 cpan GD ExtUtils::PkgConfig DBI DBD::mysql DBD::SQLite Capture::Tiny Exporter Log::Message::Simple Getopt::Long \
-	List::Util List::MoreUtils IO::File XML::Writer XML::LibXML XML::Parser XML::LibXML::Reader \
-	Data::Dumper File::Slurp JSON Storable Scalar::Util Array::Utils Config::IniFiles \
-	Statistics::Descriptive GD::Graph::boxplot
+	cpanm -l <INSTALL LOCATION>  --installdeps .
 
 

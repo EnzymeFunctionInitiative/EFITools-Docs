@@ -45,6 +45,26 @@ Config File
 
 The ``max_queue_ram`` and ``max_mem_queue_ram`` paramters are used to dynamically determine which node to assign particular jobs to.
 
+* The [environment.headers] section allows you to specify additional bash options at the top of the created scripts.  You should put any additional PATH, LD_LIBRARY_PATHS in here.  If you are using environment modules such as lmod https://lmod.readthedocs.io/en/latest/, you can have your module load commands in here.  A couple of examples are below
+
+.. code-block:: bash
+   
+   [environment.headers]
+   export PATH=/usr/local/blast/bin:/usr/local/cdhit/bin:/usr/local/R/bin:/usr/local/muscle/bin:/usr/local/usearch:/usr/local/diamond/bin:$PATH
+   export LD_LIBRARY_PATH=/usr/local/R/lib64/R/lib:$LD_LIBRARY_PATH
+
+
+.. code-block:: bash
+
+   [environment.headers]
+   module load perl
+   module load blast
+   module load cdhit
+   module load usearch
+   module load muscle
+   module load diamond
+   module load R
+   
 ===========
 Environment
 ===========
