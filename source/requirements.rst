@@ -92,7 +92,7 @@ Genomic Databases
 HPC Clusters
 ============
 
-* A Job Scheduler.  Currently supports the following
+* This can be run on a single machine.  A HPC Job Scheduler is also supported.  Currently supports the following
 
    - SLURM (https://slurm.schedmd.com/slurm.html)
    - PBS Torque (https://www.adaptivecomputing.com/products/torque/)
