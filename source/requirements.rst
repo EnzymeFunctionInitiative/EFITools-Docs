@@ -22,28 +22,38 @@ Versions more recent than the versions specified below are acceptable.
 
 * Perl Modules (https://www.cpan.org/)
 
-   - DBI 1.609
-   - DBD::mysql 4.013
-   - DBD::SQLite 1.27
-   - Capture::Tiny 0.42
-   - Exporter 5.68
-   - Log::Message::Simple 0.10
-   - Getopt::Long 2.48
-   - List::Util 1.45
-   - List::MoreUtils 0.428
-   - IO::File 1.16
-   - XML::Writer 0.606
-   - XML::LibXML 1.70
-   - XML::Parser 2.36
-   - XML::LibXML::Reader 2.0129
-   - Data::Dumper 2.160
-   - File::Slurp 9999.19
-   - JSON 2.15
-   - Storable 2.56
-   - Scalar::Util 1.45
-   - Array::Utils 0.5
-   - Config::IniFiles 3.000002
-   - GD::Graph::boxplot 1.00
+   - Array::Utils >= 0.5
+   - Bio::HMM::Logo (https://github.com/Janelia-Farm-Xfam/Bio-HMM-Logo)
+   - Capture::Tiny >= 0.42
+   - Data::Dumper >= 2.160
+   - Data::UUID
+   - Config::IniFiles >= 3.000002
+   - DBD::mysql >= 4.013
+   - DBD::SQLite >= 1.27
+   - DBI >= 1.609
+   - Exporter >= 5.68
+   - File::Slurp >= 9999.19
+   - Getopt::Long >= 2.48
+   - GD::Graph::boxplot >= 1.00
+   - Imager
+   - Imager::File::PNG
+   - Inline >= 0.53
+   - IO::File >= 1.16
+   - JSON >= 2.15
+   - List::MoreUtils >= 0.428
+   - List::Util >= 1.45
+   - Log::Message::Simple >= 0.10
+   - Scalar::Util >= 1.45
+   - Statistics::Descriptive >= 3.0702
+   - Statistics::R >= 0.34
+   - Storable >= 2.56
+   - SVG (for Bio::HMM::Logo)
+   - XML::LibXML >= 1.70
+   - XML::LibXML::Reader >= 2.0129
+   - XML::Parser >= 2.36
+   - XML::Writer >= 0.606
+
+* These modules can be installed by using the cpanm command, ran from the EFITools installation directory.
 
 * R 3.3.0 or greater (https://www.r-project.org/) with PNG support
 
@@ -66,6 +76,10 @@ Versions more recent than the versions specified below are acceptable.
 
 * DIAMOND 0.9 (https://github.com/bbuchfink/diamond)
 
+* Clustal Omega (http://www.clustal.org/omega/)
+
+* weblogo > 3.7 (Python app; can be installed with pip)
+
 * GNU Coreutils 8.28 or greater (https://www.gnu.org/software/coreutils/)
 
 * SQL Database.  Currently supports the following
@@ -77,6 +91,8 @@ Versions more recent than the versions specified below are acceptable.
 * Libxml2 (http://www.xmlsoft.org/)
 
 * LibGD (http://libgd.github.io/)
+
+* Linux utilities: dos2unix, mac2unix, bc
 
 HDF5 is only required if using HDF5-based graphing code (as of release 2, this is disabled by
 default).

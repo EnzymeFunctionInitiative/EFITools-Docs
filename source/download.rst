@@ -51,10 +51,34 @@ You can see if R has PNG support by running capabilities()
    wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/legacy.NOTSUPPORTED/2.2.26/blast-2.2.26-x64-linux.tar.gz
    tar -xf blast-2.2.26-x64-linux.tar.gz
 
-* Install Perl Modules.  This uses the cpanm to install the nessary perl modules.  You can specify a location to install all the modules.
+* Install GD.  Download latest release from https://github.com/libgd/libgd/releases
 
 .. code-block:: bash
 
-	cpanm -l <INSTALL LOCATION>  --installdeps .
+    mkdir deps/work
+    cd deps/work
+    wget https://github.com/libgd/libgd/releases/download/gd-2.3.3/libgd-2.3.3.tar.gz
+
+* Install Perl Modules.  This uses the cpanm to install the nessary perl modules.
+  You can either install modules on a system level, or specify a location to install all the modules locally.
+  If cpanm does not exist, it can be downloaded and installed using the following procedure (run from the
+  EFI_HOME directory):
+
+.. code-block:: bash
+
+    curl -L https://cpanmin.us/ -o bin/cpanm
+    chmod +x bin/cpanm
+
+* Install modules.
+
+.. code-block:: bash
+
+    mkdir perl5
+    bin/cpanm -l $PWD/perl5 --installdeps .
+
+* After module installation, it is necessary to configure the Perl environment to use the locally-installed modules
+  Edit the conf/perl_env.sh file and change the first line, BASE, to be the EFI_HOME directory.
+  conf/perl_env.sh should be included in every environment config.
+
 
 
