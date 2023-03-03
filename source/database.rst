@@ -1,5 +1,4 @@
 Database
 ========
 
-You can download a prebuilt database.  You can also create your own database
-
+We recommend using our pre-built databases. However, if you would like to create your own database, you can do so via the steps below.
