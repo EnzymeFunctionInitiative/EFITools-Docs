@@ -10,7 +10,7 @@
 ## Compiling
 * Install Sphinx
 ```
-pip install sphinx
+pip install sphinx sphinx_rtd_theme
 ```
 * To compile html files
 ```

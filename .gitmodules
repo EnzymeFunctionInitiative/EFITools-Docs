@@ -1,4 +1,0 @@
-[submodule "source/_themes/sphinx_rtd_theme"]
-	path = source/_themes/sphinx_rtd_theme
-	url = https://github.com/readthedocs/sphinx_rtd_theme.git
-	tag = 0.4.3
