@@ -2,13 +2,13 @@
 Config File
 ===========
 
-* Copy conf/efi.config.example to conf/efi.config
+1. Copy conf/efi.conf.example to conf/efi.conf
 
 .. code-block:: bash
 
-   cp conf/efi.conf.example conf/efi.config
+   cp conf/efi.conf.example conf/efi.conf
 
-* Edit conf/efi.config to support your environment
+2. Edit conf/efi.conf to support your environment
 
 * For MySQL/MariaDB Setup edit the database section.
 
@@ -21,7 +21,7 @@ Config File
    host=<MYSQLHOST>
    port=3306
 
-* For SQLite
+* For SQLite edit the database section.
   
 .. code-block:: bash
 
@@ -69,14 +69,15 @@ The ``max_queue_ram`` and ``max_mem_queue_ram`` paramters are used to dynamicall
 Environment
 ===========
 
-In order to run the EFITool commands, the environment for it needs to be setup so the bin folder is in your PATH,  
-* Copy environment.sh.example file to environment.sh
+In order to run the EFITool commands, the environment for it needs to be setup so the bin folder is in your PATH.
+
+1. Copy environment.sh.example file to environment.sh
 
 .. code-block:: bash
 
    cp environment.sh.example environment.sh
 
-* Edit environmemt.sh to have the PATH variable point to the bin folder and add any other PATHS, LD_LIRRARY_PATHS, modules that are needed.
+2. Edit environmemt.sh to have the PATH variable point to the bin folder and add any other PATHS, LD_LIRRARY_PATHS, modules that are needed.
 
 .. code-block:: bash
 
