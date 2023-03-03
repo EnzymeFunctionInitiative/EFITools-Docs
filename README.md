@@ -1,6 +1,6 @@
 # EFITools Documentation 
 
-![Travis](https://api.travis-ci.com/EnzymeFunctionInitiative/EFITools-Docs.svg?branch=master)
+[![Build Status](https://github.com/EnzymeFunctionInitiatve/EFITools-Docs/actions/workflows/main.yml/badge.svg)](https://github.com/EnzymeFunctionInitiative/EFITools-Docs/actions/workflows/main.yml)
 
 * Main Documentation for the EFITools 
 * Used to install EFITools at https://github.com/EnzymeFunctionInitiative/EFITools
